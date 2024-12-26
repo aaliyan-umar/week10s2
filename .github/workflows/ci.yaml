@@ -9,7 +9,7 @@ jobs:
         run: echo "Welcome to the Github Actions"
       - name: Clone Repo
         uses: actions/chechout@v4
-      - name: Repository Information
+      - name: Repository Information  
         run: |
           echo "Following is the Information about the cloned repe"
           echo "Repository Name: ${{github.repository}} "
