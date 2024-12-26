@@ -1,0 +1,22 @@
+name: ci-wf
+on: 
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: welcome steps 
+        run: echo "Welcome to the Github Actions"
+      - name: Clone Repo
+        uses: actions/checkout@v4
+      - name: Repository Information  
+        run: |
+          echo "Following is the Information about the cloned repe"
+          echo "Repository Name: ${{github.repository}}"
+          echo "Repository Name: ${{github.owner}}"
+          git branch
+          git log
+
+
+
+    
