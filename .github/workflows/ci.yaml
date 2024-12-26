@@ -12,8 +12,11 @@ jobs:
       - name: Repository Information  
         run: |
           echo "Following is the Information about the cloned repe"
-          echo "Repository Name: ${{github.repository}} "
-          echo "Repository Name: ${{github.owner}} "      
+          echo "Repository Name: ${{github.repository}}"
+          echo "Repository Name: ${{github.owner}}"
+          git branch
+          git log
+                
 
 
     
